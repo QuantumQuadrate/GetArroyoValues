@@ -1,14 +1,6 @@
-
-# coding: utf-8
-
-# In[8]:
-
 import serial
 import time
 import csv
-
-
-# In[29]:
 
 def get_arroyotemp(serialdevice):
     serialdevice.write("TEC:T?\r\n")
@@ -73,7 +65,3 @@ for meas in range(total_meas):
         filewriter = csv.writer(csvfile)
         filewriter.writerow([time.time(),get_arroyotemp(ser1),get_arroyovoltage(ser1),get_arroyocurrent(ser1),get_arroyoresistance(ser1),get_arroyotemp(ser2),get_arroyovoltage(ser2),get_arroyocurrent(ser2),get_arroyoresistance(ser2)])
     meas = meas+1
-
-
-
-
