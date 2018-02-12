@@ -47,7 +47,9 @@ ser2=serial.Serial('/dev/tty.usbserial-A800faLe',
 time.sleep(0.1) # wait so serial comm is initialized
 
 meas = 1
+# Total number of measurments
 total_meas=3
+# Measurments seperated by time(s)=wait
 wait = 1
 
 lasttime=time.time()
