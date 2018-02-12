@@ -1,3 +1,7 @@
+'''This code is designed to communicate with Arroyo Instruments 5240, and write the time stamped values
+of temperature, voltage, current, and resistance to a CSV file of your choice. Note that this code is set
+up to communicate to two instruments at once.'''
+
 import serial
 import time
 import csv
